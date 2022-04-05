@@ -6,8 +6,15 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0463E50827F7497A00806D5C /* CEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0463E50727F7497A00806D5C /* CEExtensionKit */; };
+		0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* HelloWorld.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldExtension.ceext; sourceTree = BUILT_PRODUCTS_DIR; };
+		0463E50927F749CC00806D5C /* HelloWorldExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		0463E50A27F749CD00806D5C /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -15,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463E50827F7497A00806D5C /* CEExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,7 +32,9 @@
 		0463E4F627F7492100806D5C = {
 			isa = PBXGroup;
 			children = (
+				0463E50A27F749CD00806D5C /* HelloWorld.swift */,
 				0463E50027F7492100806D5C /* Products */,
+				0463E50927F749CC00806D5C /* HelloWorldExtension-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +62,9 @@
 			dependencies = (
 			);
 			name = HelloWorldExtension;
+			packageProductDependencies = (
+				0463E50727F7497A00806D5C /* CEExtensionKit */,
+			);
 			productName = HelloWorldExtension;
 			productReference = 0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */;
 			productType = "com.apple.product-type.bundle";
@@ -67,6 +80,7 @@
 				TargetAttributes = {
 					0463E4FE27F7492100806D5C = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -79,6 +93,9 @@
 				Base,
 			);
 			mainGroup = 0463E4F627F7492100806D5C;
+			packageReferences = (
+				0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */,
+			);
 			productRefGroup = 0463E50027F7492100806D5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -103,6 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +241,7 @@
 		0463E50427F7492100806D5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -230,11 +249,19 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.pkasila.HelloWorldExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = ceext;
 			};
 			name = Debug;
@@ -242,6 +269,7 @@
 		0463E50527F7492100806D5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -249,11 +277,18 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.pkasila.HelloWorldExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = ceext;
 			};
 			name = Release;
@@ -280,6 +315,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkasila/CEExtensionKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0463E50727F7497A00806D5C /* CEExtensionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */;
+			productName = CEExtensionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0463E4F727F7492100806D5C /* Project object */;
 }
