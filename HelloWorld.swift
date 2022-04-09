@@ -8,22 +8,12 @@
 import Foundation
 import CEExtensionKit
 
-public class HelloWorldExtension: ExtensionInterface {
+@objc(HelloWorldExtension)
+public class HelloWorldExtension: NSObject, ExtensionInterface {
     var api: ExtensionAPI
 
-    init(api: ExtensionAPI) {
+    required public init(extensionAPI api: ExtensionAPI) {
         self.api = api
         print("Hello from HelloWorldExtension: \(api)!")
-    }
-}
-
-@objc(HelloWorldBuilder)
-public class HelloWorldBuilder: NSObject, ExtensionBuilderProtocol {
-    required public override init() {
-        super.init()
-    }
-
-    public func build(withAPI api: ExtensionAPI) -> ExtensionInterface {
-        return HelloWorldExtension(api: api)
     }
 }
