@@ -248,7 +248,7 @@
 				DEVELOPMENT_TEAM = 6M253KWXRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = HelloWorldExtension;
+				INFOPLIST_KEY_NSPrincipalClass = HelloWorldBuilder;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -277,7 +277,7 @@
 				DEVELOPMENT_TEAM = 6M253KWXRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = HelloWorldExtension;
+				INFOPLIST_KEY_NSPrincipalClass = HelloWorldBuilder;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
