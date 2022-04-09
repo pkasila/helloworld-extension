@@ -18,8 +18,12 @@ public class HelloWorldExtension: ExtensionInterface {
 }
 
 @objc(HelloWorldBuilder)
-public class HelloWorldBuilder: ExtensionBuilder {
-    public override func build(withAPI api: ExtensionAPI) -> ExtensionInterface {
+public class HelloWorldBuilder: NSObject, ExtensionBuilderProtocol {
+    required public override init() {
+        super.init()
+    }
+
+    public func build(withAPI api: ExtensionAPI) -> ExtensionInterface {
         return HelloWorldExtension(api: api)
     }
 }
