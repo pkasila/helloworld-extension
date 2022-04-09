@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0463E50827F7497A00806D5C /* CEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0463E50727F7497A00806D5C /* CEExtensionKit */; };
 		0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* HelloWorld.swift */; };
+		04C325542801B3E800C8DA2D /* CEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04C325532801B3E800C8DA2D /* CEExtensionKit */; };
+		04C325552801B3E800C8DA2D /* CEExtensionKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 04C325532801B3E800C8DA2D /* CEExtensionKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04C325562801B3E900C8DA2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04C325552801B3E800C8DA2D /* CEExtensionKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldExtension.ceext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0463E50827F7497A00806D5C /* CEExtensionKit in Frameworks */,
+				04C325542801B3E800C8DA2D /* CEExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +50,7 @@
 				0463E50A27F749CD00806D5C /* HelloWorld.swift */,
 				0463E50027F7492100806D5C /* Products */,
 				0463E50927F749CC00806D5C /* HelloWorldExtension-Bridging-Header.h */,
+				04C325522801B3E800C8DA2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +60,13 @@
 				0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		04C325522801B3E800C8DA2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -56,6 +79,7 @@
 				0463E4FB27F7492100806D5C /* Sources */,
 				0463E4FC27F7492100806D5C /* Frameworks */,
 				0463E4FD27F7492100806D5C /* Resources */,
+				04C325562801B3E900C8DA2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -63,7 +87,7 @@
 			);
 			name = HelloWorldExtension;
 			packageProductDependencies = (
-				0463E50727F7497A00806D5C /* CEExtensionKit */,
+				04C325532801B3E800C8DA2D /* CEExtensionKit */,
 			);
 			productName = HelloWorldExtension;
 			productReference = 0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */;
@@ -330,7 +354,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0463E50727F7497A00806D5C /* CEExtensionKit */ = {
+		04C325532801B3E800C8DA2D /* CEExtensionKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */;
 			productName = CEExtensionKit;
