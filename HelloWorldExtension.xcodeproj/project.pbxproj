@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* HelloWorld.swift */; };
-		04C325542801B3E800C8DA2D /* CEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04C325532801B3E800C8DA2D /* CEExtensionKit */; };
-		04C325552801B3E800C8DA2D /* CEExtensionKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 04C325532801B3E800C8DA2D /* CEExtensionKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04C3256228034E1900C8DA2D /* CodeEditKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04C3256128034E1900C8DA2D /* CodeEditKit */; };
+		04C3256328034E3500C8DA2D /* CodeEditKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 04C3256128034E1900C8DA2D /* CodeEditKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04C325552801B3E800C8DA2D /* CEExtensionKit in Embed Frameworks */,
+				04C3256328034E3500C8DA2D /* CodeEditKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C325542801B3E800C8DA2D /* CEExtensionKit in Frameworks */,
+				04C3256228034E1900C8DA2D /* CodeEditKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			);
 			name = HelloWorldExtension;
 			packageProductDependencies = (
-				04C325532801B3E800C8DA2D /* CEExtensionKit */,
+				04C3256128034E1900C8DA2D /* CodeEditKit */,
 			);
 			productName = HelloWorldExtension;
 			productReference = 0463E4FF27F7492100806D5C /* HelloWorldExtension.ceext */;
@@ -118,7 +118,7 @@
 			);
 			mainGroup = 0463E4F627F7492100806D5C;
 			packageReferences = (
-				0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */,
+				04C3256028034E1900C8DA2D /* XCRemoteSwiftPackageReference "CodeEditKit" */,
 			);
 			productRefGroup = 0463E50027F7492100806D5C /* Products */;
 			projectDirPath = "";
@@ -343,9 +343,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */ = {
+		04C3256028034E1900C8DA2D /* XCRemoteSwiftPackageReference "CodeEditKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pkasila/CEExtensionKit";
+			repositoryURL = "https://github.com/CodeEditApp/CodeEditKit";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -354,10 +354,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04C325532801B3E800C8DA2D /* CEExtensionKit */ = {
+		04C3256128034E1900C8DA2D /* CodeEditKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0463E50627F7497A00806D5C /* XCRemoteSwiftPackageReference "CEExtensionKit" */;
-			productName = CEExtensionKit;
+			package = 04C3256028034E1900C8DA2D /* XCRemoteSwiftPackageReference "CodeEditKit" */;
+			productName = CodeEditKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

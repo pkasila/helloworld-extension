@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CEExtensionKit
+import CodeEditKit
 
 public class HelloWorldExtension: ExtensionInterface {
     var api: ExtensionAPI
